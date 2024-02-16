@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js
+        "></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div style="width: 100%; max-width: 640px; margin: auto; margin-bottom: 100px">
+            <label for="myChart"><h2>Rack Price (Non-Contract)</h2></label>
+            <p>Rack Price is a price that is not locked in by a contract. This means that the buyer will have to pay the market price at the time of purchase.</p>
+            <div style="width: 100%; max-width: 640px; margin: auto; height: 500px">
+                <canvas id="myChart1"></canvas>
+            </div>
+        </div>
+        <div style="width: 100%; max-width: 640px; margin: auto; margin-bottom: 100px">
+            <label for="myChart"><h2>Offset Price Contract</h2></label>
+            <p>Offset Price Contract is a contract that allows the buyer to lock in an offset price for a specific period of time. This guarantees the buyer a lower price than the market price for the entire period of the contract.</p>
+            <div style="width: 100%; max-width: 640px; margin: auto; height: 500px">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div style="width: 100%; max-width: 640px; margin: auto; margin-bottom: 100px">
+            <label for="myChart"><h2>Fixed Price Contract</h2></label>
+            <p>Fixed Price Contract is a contract that allows the buyer to lock in a fixed price for a specific period of time. This guarantees the buyer a fixed price for the entire period of the contract, regardless of the market price being higher or lower than the fixed price.</p>
+            <div style="width: 100%; max-width: 640px; margin: auto; height: 500px">
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+        <div style="width: 100%; max-width: 640px; margin: auto; margin-bottom: 100px">
+            <label for="myChart3"><h2>Collar Price Contract</h2></label>
+            <p>Collar Price Contract is a contract that allows the buyer to lock in a minimum and maximum price for a specific period of time. This guarantees the buyer a price within the range of the minimum and maximum price for the entire period of the contract.</p>
+            <div style="width: 100%; max-width: 640px; margin: auto; height: 500px">
+                <canvas id="myChart3"></canvas>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</body>
+</html>
